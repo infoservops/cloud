@@ -1,0 +1,1 @@
+define(["exports"],(function(r){"use strict";class e extends Error{name="RuntimeError";constructor(r,...e){super([r,...e].filter(Boolean).join(", ")),Error.captureStackTrace&&Error.captureStackTrace(this,this.constructor)}}r.ApiError=class extends e{name="ApiError"},r.RuntimeError=e,r.encodePath=(r="")=>r.split("/").map(encodeURIComponent).join("/")}));
